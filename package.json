@@ -1,0 +1,13 @@
+{
+  "name": "vue-query-poc-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.8.1",
+  "scripts": {
+    "dev": "pnpm --parallel --stream --filter @vue-query-poc/backend --filter @vue-query-poc/frontend dev",
+    "dev:frontend": "pnpm --filter @vue-query-poc/frontend dev",
+    "dev:backend": "pnpm --filter @vue-query-poc/backend dev",
+    "dev:video": "pnpm --filter @vue-query-poc/video dev",
+    "build": "pnpm -r build",
+    "build:video": "pnpm --filter @vue-query-poc/video build"
+  }
+}
